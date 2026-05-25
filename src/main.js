@@ -1,21 +1,13 @@
-import '@/assets/style/style.scss'
+import "./assets/style/style.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(router)
+app.use(router);
 
-app.mount('#app')
+app.mount("#app");
 
-// навигация
-const buttonMenu = document.querySelector('.mobile-navigation__header-button')
-const mobileNavigation = document.querySelector('.mobile-navigation')
-
-buttonMenu.addEventListener('click', buttonMenuClicked)
-
-function buttonMenuClicked(){
-    mobileNavigation.classList.toggle('opened')
-}
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
